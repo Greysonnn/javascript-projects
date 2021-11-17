@@ -22,9 +22,11 @@
     </div>
     <script src="https://unpkg.com/vue@3.2.21"></script>
     <script>
+        
         let app = Vue.createApp({
             // app
         })
+        
         app.component('login-form', {
             template: `
                 <form @submit.prevent="handleSubmit">
@@ -50,6 +52,7 @@
                 }
             }
         })
+        
         app.component('custom-input', {
             template: `
                 <label>
@@ -59,6 +62,7 @@
             `,
             props: ['label']
         })
+        
         app.mount('#app')
     </script>
 </body>
